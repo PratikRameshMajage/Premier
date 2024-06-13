@@ -348,3 +348,52 @@ html, body{
     object-fit: cover;
     object-position: center;
 }
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding-top: 1px;
+}
+#marque{
+    margin: 5vh 0vh;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+#marque h1{
+    text-transform: uppercase;
+    flex-shrink: 0;
+    font-size: 5vw;
+    padding-left: 2vw;
+    font-family: monument;
+    font-weight: 900;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    animation-name: movingmarque;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes movingmarque{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+#page5 #footer{
+    height: calc(100vh - 30vh);
+    width: 100%;
+    padding: 5vh 0vh;
+}
+#footer #section{
+    height: 60vh;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
