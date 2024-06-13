@@ -6,6 +6,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: #f8f8f8;
 }
 #main{
     height: 100%;
@@ -284,4 +285,66 @@ html, body{
 .info h5{
     font-size: 13px;
     text-transform: uppercase;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 5vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#page4-part1{
+    height: 100%;
+    width: 48%;
+    background-color: aquamarine;
+    background-image: url(https://images.unsplash.com/photo-1634666498696-c68a92adc199?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#page4-part2{
+    height: 100%;
+    width: 48%;
+}
+#page4-part2 #page4-part2-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#page4-part2 #page4-part2-top h1{
+    font-family: monument;
+    font-size: 4vw;
+}
+#page4-part2 #page4-part2-top h3{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    width: 80%;
+}
+#page4-part2 #page4-part2-top p{
+    font-family: sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    width: 100%;
+}
+#page4-part2-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4-part2-bottom #img1{
+    width: 52%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page4-part2-bottom #img2{
+    width: 43%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
