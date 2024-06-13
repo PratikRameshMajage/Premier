@@ -108,7 +108,7 @@ html, body{
     height: 40px;
 }
 #page2{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
 }
 #scroll{
@@ -150,7 +150,7 @@ html, body{
     }
 }
 #alphabet{
-    height: 10vw;
+    height: 10vh;
     width: 100%;
     /* background-color: #000; */
     color: #000;
@@ -184,4 +184,45 @@ html, body{
 }
 #alphabet h6:hover{
     border: 2px solid #000;
+}
+#container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 3vw;
+    position: relative;
+    /* gap: 2vw */
+}
+#container #part1{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1673757121102-0ca51260861f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#container #part2{
+    width: 45%;
+    height: 100%;
+}
+#container #part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#container #part2 #part2-text{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 1vw;
+}
+#part2 #part2-text h2{
+    font-size: 25px;
+    width: 35%;
+}
+#part2 #part2-text p{
+    width: 70%;
+    font-size: 15px;
 }
