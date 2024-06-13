@@ -66,11 +66,13 @@ html, body{
     object-fit: cover;
 }
 #overlay{
-    height: 50%;
+    height: 45%;
     width: 100%;
     position: absolute;
     bottom: 0;
-    padding: 2vw 4vw; 
+    padding: 1vw 4vw;
+    background-color: rgba(0, 0, 0, 0.081);
+    /* backdrop-filter: blur(5px); */
 }
 #overlay #over1{
     display: flex;
@@ -104,4 +106,47 @@ html, body{
 } */
 #over2 img{
     height: 40px;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+}
+#scroll{
+    height: 50vh;
+    width: 100%;
+    padding: 5vh;
+    /* white-space: nowrap; */
+    display: flex;
+    overflow-x: hidden;
+
+}
+#scroll #scroll-container {
+    height: 100%;
+    width: fit-content;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    animation-name: scroll-container;
+    animation-duration: 10s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-left: 3vw;
+}
+@keyframes scroll-container{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
