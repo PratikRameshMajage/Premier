@@ -49,3 +49,59 @@ html, body{
     border-right: none;
     width: 10%;
 }
+#center{
+    width: 100%;
+    height: calc(100vh - 10vh - 21px );
+    padding: 3vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2vw 4vw; 
+}
+#overlay #over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8f8f8;
+}
+#overlay #over1 h1{
+    font-family: monument;
+    font-size: 4vw;
+    width: 50%;
+}
+#overlay #over1 h2{
+    padding: 2vw 2.2vw ;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+/* #overlay #over1 h1, h2{
+    mix-blend-mode: difference;
+} */
+#overlay #over2{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8f8f8;
+    border-top: 2px solid #fff;
+}
+/*#overlay #over2 h1, img{
+    mix-blend-mode: difference;
+} */
+#over2 img{
+    height: 40px;
+}
