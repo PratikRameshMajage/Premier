@@ -118,7 +118,6 @@ html, body{
     /* white-space: nowrap; */
     display: flex;
     overflow-x: hidden;
-
 }
 #scroll #scroll-container {
     height: 100%;
@@ -149,4 +148,40 @@ html, body{
     to{
         transform: translateX(-100%);
     }
+}
+#alphabet{
+    height: 10vw;
+    width: 100%;
+    /* background-color: #000; */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+    margin-right: 2vw;
+}
+#alphabet h6{ 
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.5vw 0.7vw ;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #00000000;
+    /* background-color: aquamarine; */
+}
+#alphabet h6:hover{
+    border: 2px solid #000;
 }
