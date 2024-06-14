@@ -35,7 +35,28 @@ html, body{
     font-family: monument;
     font-size: 40px;
     letter-spacing: -2px;
+    position: relative;
 }
+#nav h1::before{
+    content: "model management";
+    font-size: 1vw;
+    font-family: gilroy;
+    font-weight: 500;
+    position: absolute;
+    bottom: 8%;
+    right: 7%;
+    letter-spacing: 0.1px;
+}
+#nav h1::after{
+    content: "©️";
+    font-size: 2vw;
+    font-weight: 200;
+    font-family: gilroy;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #nav h2{
     height: 100%;
     width: 25%;
@@ -293,7 +314,6 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 #page4-part1{
     height: 100%;
@@ -410,10 +430,40 @@ html, body{
     align-items: center;
     justify-content: center;
 }
+#logo{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #logo h1{
+    width: 70%;
     font-family: monument;
     font-size: 40px;
     letter-spacing: -2px;
+    position: relative;
+    /* background-color: red; */
+}
+#logo h1::before{
+    content: "model management";
+    font-size: 1vw;
+    font-family: gilroy;
+    font-weight: 500;
+    position: absolute;
+    bottom: -3%;
+    right: 7%;
+    letter-spacing: 0.1px;
+}
+#logo h1::after{
+    content: "©️";
+    font-size: 2vw;
+    font-weight: 200;
+    font-family: gilroy;
+    position: absolute;
+    top: -18%;
+    right: -.5%;
 }
 .elem h2{
     text-align: center;
@@ -441,4 +491,12 @@ html, body{
     align-items: start;
     justify-content: center;
     padding: 4vh;
+}
+#icons{
+    display: flex;
+    gap: 1vw;
+    padding: 1vh 0vw;
+}
+#contact #copyright>h4{width: 80%;
+    font-size: 1vw;
 }
